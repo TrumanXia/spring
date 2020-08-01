@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<bean id="apple" class="com.xyg.learn.spring.aop.Apple" scope="prototype"/>
+	<bean id="aspect" class="com.xyg.learn.spring.aop.MyAspect"/>
+	<bean id="appleI" class="com.xyg.learn.spring.aop.AppleWithInterface"/>
+	<bean id="appleA" class="com.xyg.learn.spring.aop.AppleWithAspectAnnotation"/>
+	<bean id="appleM" class="com.xyg.learn.spring.aop.AppleWithMethodAnnotation"/>
+	<bean id="appleArgs" class="com.xyg.learn.spring.aop.FruitBucket"/>
+	<bean id="aspect1" class="com.xyg.learn.spring.aop.MyAspect1"/>
+	<bean id="aspect2" class="com.xyg.learn.spring.aop.MyAspect2"/>
+	<bean id="aspect3" class="com.xyg.learn.spring.aop.MyAspect3"/>
+	<bean id="aspect4" class="com.xyg.learn.spring.aop.MyAspect4"/>
+	<bean id="aspect6" class="com.xyg.learn.spring.aop.MyAspect6"/>
+	<bean id="aspect7" class="com.xyg.learn.spring.aop.MyAspect7" scope="prototype"/>
+	<bean id="fruit" class="com.xyg.learn.spring.aop.Fruit" abstract="true"/>
+	<aop:aspectj-autoproxy/>
+</beans>
