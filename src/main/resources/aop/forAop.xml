@@ -16,5 +16,5 @@
 	<bean id="aspect6" class="com.xyg.learn.spring.aop.MyAspect6"/>
 	<bean id="aspect7" class="com.xyg.learn.spring.aop.MyAspect7" scope="prototype"/>
 	<bean id="fruit" class="com.xyg.learn.spring.aop.Fruit" abstract="true"/>
-	<aop:aspectj-autoproxy/>
+	<aop:aspectj-autoproxy  proxy-target-class="true"/>
 </beans>
